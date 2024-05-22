@@ -28,8 +28,9 @@ addon | version | maintainers | summary
 [scrap_reason_code](scrap_reason_code/) | 16.0.1.1.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
 [stock_demand_estimate](stock_demand_estimate/) | 16.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 16.0.1.0.0 |  | Allows to create demand estimates.
+[stock_exception](stock_exception/) | 16.0.1.0.0 |  | Custom exceptions on stock picking
 [stock_helper](stock_helper/) | 16.0.1.1.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 16.0.1.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 16.0.2.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 16.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.1.0.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to set justification on inventories
@@ -56,10 +57,11 @@ addon | version | maintainers | summary
 [stock_product_qty_by_packaging](stock_product_qty_by_packaging/) | 16.0.1.0.0 |  | Compute product quantity to pick by packaging
 [stock_putaway_product_template](stock_putaway_product_template/) | 16.0.1.1.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
 [stock_quant_cost_info](stock_quant_cost_info/) | 16.0.1.0.0 |  | Shows the cost of the quants
-[stock_quant_manual_assign](stock_quant_manual_assign/) | 16.0.1.0.1 |  | Stock - Manual Quant Assignment
+[stock_quant_manual_assign](stock_quant_manual_assign/) | 16.0.1.1.0 |  | Stock - Manual Quant Assignment
 [stock_quant_safe_inventory](stock_quant_safe_inventory/) | 16.0.1.0.0 |  | Prevents the quantity on the quant from being updated if quantities have already been picked but not validated in pickings in progress.
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 16.0.1.0.0 |  | Establish a removal priority on stock locations.
-[stock_reserve](stock_reserve/) | 16.0.1.3.0 |  | Stock reservations on products
+[stock_reservation_date_show](stock_reservation_date_show/) | 16.0.1.0.0 |  | Display reservation date of stock moves
+[stock_reserve](stock_reserve/) | 16.0.1.3.1 |  | Stock reservations on products
 [stock_route_mto](stock_route_mto/) | 16.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 16.0.1.0.1 |  | Allows to search for picking from supplierinfo code
 [stock_storage_category_capacity_name](stock_storage_category_capacity_name/) | 16.0.1.0.0 |  | Allows to have a better display name for Stock Storage Category Capacity model
