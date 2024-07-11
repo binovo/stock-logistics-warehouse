@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-05-22 15:33+0000\n"
+"PO-Revision-Date: 2024-07-01 10:47+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -20,6 +20,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants
 msgid "# Adjustments"
 msgstr "N° correzioni"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_needaction
+msgid "Action Needed"
+msgstr "Azione richiesta"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__action_state_to_cancel_allowed
+msgid "Action State To Cancel Allowed"
+msgstr "Consentita azione stato da annullare"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants_string
@@ -37,6 +47,11 @@ msgid "Assigned to"
 msgstr "Assegnato a"
 
 #. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteggio allegati"
+
+#. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Back to Draft"
 msgstr "Ritorna a bozza"
@@ -44,18 +59,28 @@ msgstr "Ritorna a bozza"
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Begin Adjustments"
-msgstr "Inizia correzioni"
+msgstr "Inizia rettifiche"
+
+#. module: stock_inventory
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__cancel
+msgid "Cancelled"
+msgstr "Annullato"
 
 #. module: stock_inventory
 #. odoo-python
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
 msgid ""
-"Cannot be more than one in progress inventory adjustment affecting the same "
-"location at the same time."
+"Cannot have more than one in-progress inventory adjustment affecting the "
+"same location or product at the same time."
 msgstr ""
 "Non ci può essere più di una rettifica di inventario di in corso che "
-"modifica la stessa ubicazioe nello stesso momento."
+"modifica la stessa ubicazione o prodotto nello stesso momento."
 
 #. module: stock_inventory
 #: model:ir.model,name:stock_inventory.model_res_company
@@ -108,9 +133,34 @@ msgid "Exclude Sublocation"
 msgstr "Esclude sottoubicazioni"
 
 #. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_follower_ids
+msgid "Followers"
+msgstr "Seguito da"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguito da (partner)"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__has_message
+msgid "Has Message"
+msgstr "Ha un messaggio"
+
+#. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__id
 msgid "ID"
 msgstr "ID"
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__exclude_sublocation
@@ -165,6 +215,11 @@ msgid "Inventory Reference"
 msgstr "Riferimento inventario"
 
 #. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_is_follower
+msgid "Is Follower"
+msgstr "Segue"
+
+#. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
@@ -196,9 +251,24 @@ msgid "Lot/Serial Numbers"
 msgstr "Numeri di lotto/serie"
 
 #. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Allegato principale"
+
+#. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__manual
 msgid "Manual Selection"
 msgstr "Selezione manuale"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore di consegna messaggio"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_ids
+msgid "Messages"
+msgstr "Messaggi"
 
 #. module: stock_inventory
 #. odoo-python
@@ -206,6 +276,26 @@ msgstr "Selezione manuale"
 #, python-format
 msgid "No move lines have been created"
 msgstr "Non sono state create righe di movimento"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero di errori"
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errore di consegna"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__one
@@ -283,6 +373,13 @@ msgstr "Righe movimenti di magazzino"
 #. odoo-python
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
+msgid "There are active adjustments for the requested products: %s"
+msgstr "Ci sono delle rettifiche attive per il prodotto richiesto: %s"
+
+#. module: stock_inventory
+#. odoo-python
+#: code:addons/stock_inventory/models/stock_inventory.py:0
+#, python-format
 msgid ""
 "There's already an Adjustment in Process using one requested Location: %s"
 msgstr ""
@@ -298,6 +395,16 @@ msgstr "Questo è il proprietario della rettifica di inventario"
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_stock_quant_search_not_done
 msgid "To Do"
 msgstr "Da fare"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi sito web"
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_stock_inventory__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia comunicazioni sito web"
 
 #. module: stock_inventory
 #. odoo-python
@@ -322,6 +429,21 @@ msgstr ""
 "un solo prodotto."
 
 #. module: stock_inventory
+#. odoo-python
+#: code:addons/stock_inventory/models/stock_inventory.py:0
+#, python-format
+msgid "You can't cancel this inventory %(display_name)s."
+msgstr "Non si può annullare questo inventario %(display_name)s."
+
+#. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "e.g. Annual inventory"
 msgstr "es. invntario annuale"
+
+#, python-format
+#~ msgid ""
+#~ "Cannot be more than one in progress inventory adjustment affecting the "
+#~ "same location at the same time."
+#~ msgstr ""
+#~ "Non ci può essere più di una rettifica di inventario di in corso che "
+#~ "modifica la stessa ubicazioe nello stesso momento."
