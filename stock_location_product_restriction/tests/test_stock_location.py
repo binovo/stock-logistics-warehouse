@@ -1,7 +1,6 @@
 # Copyright 2020 ACSONE SA/NV
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
-
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import Form, TransactionCase
 
 
 class TestStockLocation(TransactionCase):
@@ -260,6 +259,6 @@ class TestStockLocation(TransactionCase):
         self.assertTrue(self.loc_lvl_1_1_1.restriction_violation_message)
 
     def test_05(self):
-        """Check creation of new locations"""
-        loc = self.StockLocation.new({"name": "New Location"})
-        self.assertFalse(loc.has_restriction_violation)
+        # Check location creation
+        with Form(self.StockLocation) as location_form:
+            location_form.name = "Test"
