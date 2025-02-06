@@ -40,12 +40,14 @@ addon | version | maintainers | summary
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to set justification on inventories
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 16.0.1.0.0 |  | Lock down stock locations during inventories.
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 16.0.1.1.0 |  | More filters for inventory adjustments
+[stock_location_children](stock_location_children/) | 16.0.1.0.0 |  | Add relation between stock location and all its children
 [stock_location_lockdown](stock_location_lockdown/) | 16.0.1.0.1 |  | Prevent to add stock on locked locations
 [stock_location_package_restriction](stock_location_package_restriction/) | 16.0.1.0.0 |  | Control if the location can contain products in a package
 [stock_location_pending_move](stock_location_pending_move/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | This module allows to show pending stock moves (outgoing and incoming) on a stock location
 [stock_location_position](stock_location_position/) | 16.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.2.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Prevent to mix different products into the same stock location
 [stock_location_zone](stock_location_zone/) | 16.0.1.0.2 |  | Classify locations with zones.
+[stock_lot_multi_image](stock_lot_multi_image/) | 16.0.1.0.0 |  | This module implements the possibility to have multiple images for a stock lot
 [stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.1 |  | Try to reserve moves when goods enter in a location
 [stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.2 |  | Auto release moves after auto assign
 [stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.1 |  | Adds field for common destination moves
@@ -82,7 +84,7 @@ addon | version | maintainers | summary
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 16.0.1.0.1 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 16.0.1.1.2 |  | Get product quantities in a secondary unit
 [stock_storage_category_capacity_name](stock_storage_category_capacity_name/) | 16.0.1.0.0 |  | Allows to have a better display name for Stock Storage Category Capacity model
-[stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 16.0.1.0.1 |  | Stock Valuation Layer Accounting Date
+[stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 16.0.1.0.2 |  | Stock Valuation Layer Accounting Date
 [stock_valuation_layer_inventory_filter](stock_valuation_layer_inventory_filter/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Allows to filter Inventory Adjustments on Stock Valuation Layers
 [stock_valuation_layer_total_value](stock_valuation_layer_total_value/) | 16.0.1.0.0 |  | Show total value on tree and form view
 [stock_vlm_mgmt](stock_vlm_mgmt/) | 16.0.1.0.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Light self contained alternative for VLM integrations
