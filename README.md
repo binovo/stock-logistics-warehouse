@@ -36,7 +36,7 @@ addon | version | maintainers | summary
 [stock_helper](stock_helper/) | 16.0.1.1.0 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 16.0.2.5.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 16.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
-[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.1.2.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
+[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.2.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to set justification on inventories
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 16.0.1.0.0 |  | Lock down stock locations during inventories.
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 16.0.1.1.0 |  | More filters for inventory adjustments
@@ -47,11 +47,13 @@ addon | version | maintainers | summary
 [stock_location_pending_move](stock_location_pending_move/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | This module allows to show pending stock moves (outgoing and incoming) on a stock location
 [stock_location_position](stock_location_position/) | 16.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.2.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Prevent to mix different products into the same stock location
+[stock_location_release_channel_restriction](stock_location_release_channel_restriction/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module allows to restrict location content to products that are in the same release channel (moves).
 [stock_location_zone](stock_location_zone/) | 16.0.1.0.2 |  | Classify locations with zones.
 [stock_lot_multi_image](stock_lot_multi_image/) | 16.0.1.0.0 |  | This module implements the possibility to have multiple images for a stock lot
-[stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.1 |  | Try to reserve moves when goods enter in a location
-[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.3 |  | Auto release moves after auto assign
-[stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.1 |  | Adds field for common destination moves
+[stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.2 |  | Try to reserve moves when goods enter in a location
+[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.4 |  | Auto release moves after auto assign
+[stock_move_auto_assign_auto_release_exclude_location](stock_move_auto_assign_auto_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from auto release moves after auto assign
+[stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.2 |  | Adds field for common destination moves
 [stock_move_location](stock_move_location/) | 16.0.1.4.1 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.5.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add packaging fields in the stock moves
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 16.0.1.0.2 |  | Add a MTS+MTO route
@@ -71,7 +73,7 @@ addon | version | maintainers | summary
 [stock_pull_list](stock_pull_list/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | The pull list checks the stock situation and calculates needed quantities.
 [stock_putaway_product_template](stock_putaway_product_template/) | 16.0.1.1.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
 [stock_quant_cost_info](stock_quant_cost_info/) | 16.0.1.0.0 |  | Shows the cost of the quants
-[stock_quant_expiration_date_tree](stock_quant_expiration_date_tree/) | 16.0.1.0.0 | [![Manuel Calero](https://github.com/Manuel Calero.png?size=30px)](https://github.com/Manuel Calero) | Allows to display expirations dates on stock quant tree view
+[stock_quant_expiration_date_tree](stock_quant_expiration_date_tree/) | 16.0.1.1.0 | [![manuelcalerosolis](https://github.com/manuelcalerosolis.png?size=30px)](https://github.com/manuelcalerosolis) | Allows to display expirations dates on stock quant tree view
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 16.0.1.2.0 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 16.0.1.0.1 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 16.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
